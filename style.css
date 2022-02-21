@@ -1,0 +1,268 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#icon-id,
+#home-link {
+  float: left;
+  margin-left: 5%;
+  margin-top: 20px;
+  text-decoration: none;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  transform: scale();
+  transition: 1.5s;
+}
+#siteName {
+  display: inline-block;
+  margin: auto 0px;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 2;
+}
+/* /////////////////////////////////////////////////////////////menu ivon css  */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: blue;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.bar2 {
+  opacity: 0;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 11px);
+  transform: rotate(-45deg) translate(-7px, 11px);
+}
+.change2 .bar1 {
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+  transform: rotate(0deg) translate(0px, 0px);
+  background-color: white;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+/*position and ------------------------------------------ menu container properties*/
+.container {
+  background-color: white;
+  position: fixed;
+  left: 90%;
+  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(4px, 0px);
+  transform: rotate(45deg) translate(4px, 0px);
+}
+.change2 .bar3 {
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+  transform: rotate(0deg) translate(0px, 0px);
+  background-color: white;
+}
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 40px;
+  right: 0;
+  text-align: center;
+  background-color: rgb(27, 7, 7); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll opoacity */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  margin: 35px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+#chatlink {
+  width: 250px;
+  height: 75px;
+  display: flex;
+
+  justify-content: space-between;
+  background-color: rgb(92, 43, 43);
+  margin: auto;
+  font-size: 1.5rem;
+}
+#letsgo {
+  width: 70%;
+  height: 100%;
+  margin: 0px;
+  display: inline-block;
+  background-color: white;
+}
+#letsgo span {
+  display: inline-block;
+  margin-top: 25px;
+  color: rgb(32, 7, 7);
+}
+#go {
+  margin: 0px;
+  width: 29%;
+  display: inline-block;
+  height: 100%;
+  background-color: white;
+}
+#fleche {
+  display: inline-block;
+  margin-top: 8px;
+}
+/* /////////////////////////////////////////////////////////////contact us  */
+#contact-us {
+  background-color: blue;
+  position: absolute;
+  right: 12%;
+  top: 40px;
+  width: 120px;
+  height: 40px;
+  padding: auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#contact-us a {
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a {
+  display: inline-block;
+  margin: auto;
+  margin-top: 30px;
+}
+#banner {
+  position: absolute;
+  left: 40%;
+  width: 60%;
+  top: 100px;
+}
+#banner img {
+  width: 100%;
+}
+#hide {
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.2;
+}
+
+#oursevices {
+  text-align: left;
+  font-size: 4rem;
+  position: absolute;
+  left: 10%;
+  width: 45%;
+  top: 240px;
+  font-weight: bolder;
+}
+
+#assets {
+  position: absolute;
+  width: 22%;
+  height: 25px;
+  overflow: hidden;
+  left: 10%;
+  top: 150px;
+  color: black;
+  z-index: 0;
+}
+@keyframes myFrame {
+  0% {
+    transform: translateY(0px);
+    transition-duration: 0s;
+  }
+  14.28% {
+    transform: translateY(-50px);
+    transition-duration: 0s;
+  }
+  28.56% {
+    transform: translateY(-100px);
+    transition-duration: 0s;
+  }
+  42.8% {
+    transform: translateY(-150px);
+  }
+  57.12% {
+    transform: translateY(-200px);
+  }
+  71.4% {
+    transform: translateY(-250px);
+  }
+  85.6% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(-350px);
+  }
+}
+
+#assets div {
+  transition-duration: 0s;
+  animation-name: myFrame;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+#assets span {
+  display: block;
+  height: 50px;
+}
