@@ -27,7 +27,7 @@ img {
   cursor: pointer;
   z-index: 2;
 }
-/* /////////////////////////////////////////////////////////////menu ivon css  */
+/* //////////////////////////////////contact///////////////////////////menu ivon css  */
 .bar1,
 .bar2,
 .bar3 {
@@ -162,20 +162,21 @@ img {
   margin-top: 8px;
 }
 /* /////////////////////////////////////////////////////////////contact us  */
-#contact-us {
+.contact-us {
   background-color: blue;
   position: absolute;
   right: 12%;
   top: 40px;
-  width: 120px;
-  height: 40px;
-  padding: auto;
+  width: 180px;
+  height: 50px;
   font-size: 1.5rem;
-  text-align: center;
 }
-#contact-us a {
+.contact-us a {
+  display: block;
   color: white;
   text-decoration: none;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 .social {
@@ -268,20 +269,20 @@ img {
 }
 #orizondesc {
   width: 45%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   position: absolute;
-  top: 650px;
+  top: 750px;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Be Vietnam Pro";
   border-left: 3px solid blue;
   padding-left: 50px;
   margin-left: 10%;
   color: rgb(7, 7, 65);
 }
-body div:hover {
+/*body div:hover {
   transform: rotateX(15deg) scale(1.05);
   transition: 1s;
-}
+}*/
 #services {
   width: 74%;
   position: absolute;
@@ -310,6 +311,7 @@ body div:hover {
   font-size: 1.3rem;
   width: 220px;
   margin-left: 75%;
+  border-right: 3px solid blue;
 }
 .box2left {
   width: 450px;
@@ -422,4 +424,217 @@ body div:hover {
   display: block;
   margin-left: -250px;
   width: 700px;
+}
+#box6 {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box6 .contact-us2 {
+  background-color: blue;
+  width: 180px;
+  height: 60px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  text-decoration: none;
+}
+#box6 .contact-us2 span {
+  display: block;
+  color: white;
+
+  margin-left: 30px;
+  margin-top: 12px;
+}
+.viewall {
+  background-color: white;
+  text-decoration: none;
+  width: 230px;
+  height: 60px;
+  font-size: 1.5rem;
+  border: 1px solid rgb(228, 207, 207);
+}
+.viewall #v {
+  display: inline-block;
+  color: blue;
+  width: 50%;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 12px;
+  background-color: white;
+}
+
+#fleche2 {
+  margin-top: -10px;
+  display: inline-block;
+  font-size: 30px;
+  height: 100%;
+}
+#bottom {
+  position: absolute;
+  top: 3800px;
+  width: 90%;
+  left: 5%;
+}
+.trust {
+  font-size: 4rem;
+  width: 600px;
+  font-family: "Be Vietnam Pro";
+}
+#bottom > div {
+  margin-top: 150px;
+}
+.trust2 {
+  font-size: 1.5rem;
+  font-family: "Be Vietnam Pro";
+  width: 750px;
+  line-height: 1.1ren;
+  color: rgb(13, 19, 49);
+  border-left: 4px solid blue;
+}
+#logos {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#logos > div {
+  height: 100%;
+  width: 22%;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid rgb(177, 177, 192);
+}
+#logos img {
+  width: 120px;
+  height: 60px;
+  display: block;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+@keyframes first {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-55px);
+  }
+  70% {
+    transform: translateY(-120px);
+  }
+  99% {
+    opacity: 1;
+  }
+}
+#logo1 {
+  opacity: 0;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: first;
+}
+@keyframes second {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-55px);
+  }
+  75% {
+    transform: translateY(-120px);
+  }
+}
+#logo2 {
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-name: second;
+}
+
+@keyframes third {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-55px);
+  }
+  60% {
+    transform: translateY(-120px);
+  }
+}
+#logo3 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: third;
+}
+@keyframes fourth {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(-55px);
+  }
+  85% {
+    transform: translateY(-120px);
+  }
+}
+#logo4 {
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-name: fourth;
+}
+.plus {
+  text-align: center;
+}
+.logo2 {
+  margin-left: 45%;
+}
+.contact-us3 {
+  display: inline-block;
+
+  width: 35%;
+}
+.contact-us3 a {
+  text-decoration: none;
+  background-color: blue;
+  display: block;
+  height: 60px;
+  width: 220px;
+  color: white;
+  font-size: 1.5rem;
+}
+.contact-us3 a > span {
+  display: inline-block;
+  width: 140px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.contact-us3 p {
+  font-size: 5rem;
+  margin-top: 0px;
+}
+.competences {
+  display: inline-block;
+  width: 65%;
+}
+.competences div {
+  display: inline-block;
+  text-align: center;
+  color: #494068;
+  width: fit-content;
+  font-size: 1.2rem;
+  margin: 12px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(193, 174, 211);
+}
+.bloccomp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+}
+.competences div p {
+  margin: 10px;
 }
