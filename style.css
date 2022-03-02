@@ -459,10 +459,11 @@ img {
   display: inline-block;
   color: blue;
   width: 50%;
+  font-size: 1.5rem;
   text-decoration: none;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 12px;
+  margin-top: 15px;
   background-color: white;
 }
 
@@ -638,7 +639,7 @@ img {
 .competences div p {
   margin: 10px;
 }
-/*///////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////white/bloc5/////////////////////////////////*/
 #bloc5 {
   position: absolute;
   top: 5900px;
@@ -669,7 +670,7 @@ img {
   overflow: hidden;
   margin-top: 150px;
 }
-@keyframes slideanim {
+/* @keyframes slideanim {
   0% {
     margin-left: 0px;
   }
@@ -700,23 +701,28 @@ img {
   89% {
     margin-left: -2800px;
   }
-}
+  95% {
+    transition: none;
+  }
+  99% {
+    transition: none;
+  }
+} */
 #myslide {
   display: flex;
   flex-wrap: nowrap;
   height: 350px;
-  width: 3500px;
-
+  width: 4900px;
   margin-left: 0px;
-  animation-name: slideanim;
+  animation-iteration-count: infinite;
+  /* animation-name: slideanim;
   animation-duration: 25s;
-  animation-iteration-count: 4;
+  animation-iteration-count: 4; */
 }
 #myslide > div {
   display: inline-block;
   height: 100%;
   width: 550px;
-
   margin-left: 150px;
   color: white;
 }
@@ -729,4 +735,278 @@ img {
 }
 .dev {
   font-size: 1.4rem;
+}
+
+#commands button {
+  display: inline-block;
+  border: none;
+  height: 100%;
+  color: white;
+  width: 50px;
+  margin-right: 0px;
+  background-color: blue;
+  font-size: 2em;
+}
+#btcontent {
+  display: inline-block;
+  margin-left: 150px;
+}
+#btnslide3 {
+  display: flex;
+  width: 100px;
+  height: 50px;
+
+  justify-content: space-around;
+  justify-items: center;
+  background-color: blue;
+}
+#btnslide3 img {
+  height: 15px;
+  margin-top: 15px;
+  width: 10px;
+}
+#commands {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 100px;
+}
+
+#slidebtn {
+  height: 100%;
+  display: inline-block;
+  margin-left: 32%;
+}
+#slidebtn div {
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  background-color: blue;
+}
+#whitepart {
+  width: 100%;
+  background-color: white;
+  /* height: 1000px; */
+}
+#revew {
+  width: 50%;
+  margin-left: 150px;
+  font-size: 4rem;
+  height: 400px;
+  display: flex;
+}
+#revew p {
+  margin-top: 150px;
+}
+#revew span {
+  color: blue;
+}
+
+/***********-----/////////////////////view///////////////////////////////////////////////////////*/
+.slframe4 {
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#flexslide {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: 20px;
+}
+.sl4 {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 400px;
+}
+/* image part of slide --------------------------------------*/
+.sl4 .slleft {
+  height: 100%;
+  width: 335px;
+  min-width: 335px;
+  display: inline-block;
+}
+.sl4 .slleft img {
+  width: 100%;
+  height: 100%;
+}
+/* right side of slide-----------------------------------------*/
+.sl4 .slrigth {
+  display: inline-block;
+  height: 100%;
+  /* width: 100%; */
+  min-width: 450px;
+  margin-left: 10%;
+  font-size: 1.3rem;
+  font-family: "Be Vietnam Pro";
+}
+
+.sl4 .slrigth p > img {
+  width: 35px;
+}
+.sl4 .slrigth .pcontent {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* background-color: #11f332; */
+}
+
+.sl4 .slrigth .slbtn {
+  height: 20%;
+  display: flex;
+}
+div {
+  font-family: "Be Vietnam Pro";
+}
+.sl4 .slrigth .slbtn .picdesc {
+  display: inline-block;
+  height: 100%;
+  width: 400px;
+}
+.sl4 .slrigth .Mybtton {
+  display: inline-block;
+  height: 50px;
+  margin-left: 100px;
+  min-width: 100px;
+  margin-top: 30px;
+
+  background-color: blue;
+}
+.btframe {
+  display: flex;
+  justify-content: space-around;
+}
+.sl4 .slrigth .Mybtton img {
+  width: 10px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.rule {
+  font-size: 1.1rem;
+  color: rgb(34, 29, 63);
+}
+.enterprise {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: rgb(34, 29, 63);
+}
+#sl4commands {
+  display: flex;
+  height: 100px;
+}
+#bloc1command {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  width: 200px;
+  height: 100px;
+  margin-left: 215px;
+}
+#bloc1command > div {
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background-color: blue;
+  margin-top: -35px;
+  z-index: 1000;
+}
+#sl4commands #btcontent {
+  margin-left: 680px;
+  margin-top: -60px;
+  z-index: 1000;
+}
+#lasttext {
+  background-color: white;
+  width: 100%;
+
+  text-align: center;
+  margin-top: -50px;
+}
+#pone {
+  padding-top: 300px;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  margin-bottom: 0px;
+}
+#ptwo {
+  margin-top: 0px;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: blue;
+}
+#pthree {
+  width: 800px;
+  font-size: 1.4rem;
+  margin: auto;
+  color: #111;
+}
+#lasttext > a {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  margin: auto;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-weight: bold;
+}
+#lasttext a span {
+  margin-top: 20px;
+}
+#myfooter {
+  width: 80%;
+  height: 420px;
+  margin-top: 300px;
+  margin: auto;
+  margin-bottom: -100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#footerleft {
+  margin-top: 200px;
+  display: inline-block;
+  width: 500px;
+}
+#footerright {
+  display: inline-block;
+  margin-top: 200px;
+}
+#footermenu {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500px;
+  justify-content: space-between;
+  justify-items: center;
+}
+#footermenu a {
+  text-decoration: none;
+  display: inline-block;
+}
+#footerleft img {
+  width: 150px;
+}
+#footerimg {
+  width: 150px;
+}
+#footicons {
+  width: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#footicons a {
+  display: inline-block;
+  width: 25px;
 }
