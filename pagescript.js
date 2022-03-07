@@ -1,6 +1,6 @@
 var etat =0;
 function myFunction(x) {
-   document.getElementById("hide").style.width = "100%";
+   document.getElementById("hide").style.width = "50%";
   x.classList.toggle("change"); 
   console.log(x);
    if(etat==0){
@@ -59,10 +59,11 @@ const size=slideelt[0].clientWidth+150
     }
     
  })
-function showslide(i){
-   myslidev.style.transition='transform 0.5s linear';
-    counter=i;
+function showslide(i){   
+    myslidev.style.transition='transform 0.5s linear';
+    counter=i;  
     myslidev.style.transform='translateX('+(-size*i) +'px)';
+    
 }
 
 // last slide animation 
@@ -112,14 +113,26 @@ myslide4.addEventListener('transitionend',()=>{
     }
     myslide4.style.opacity = '1';
  })
-//  for(let z=0;z<1000;z++){
-//     setTimeout(() => {
-//        if(s4counter>6)return;
-//     s4counter++;
-//       myslide4.style.transform='translateX('+(-size5*s4counter) +'px)';      
-//       myslide4.style.transition='transform 1s linear';
-//       console.log(s4counter);
-//     }, 5000);
-//  }
-//  myslide4.style.transform='translateX('+(-size5) +'px)';
-//  myslide4.style.transition='transform 5s linear';
+function playv(elt){
+elt.setAttribute("autoplay", "true");
+}
+function fadevi(val){
+    document.getElementById('vmask').style.width= val+"vw";
+}
+document.getElementById('showreelfullvid').style.transform = 'translateX(2000px)';
+function bringvids(){
+    document.getElementById('showreelfullvid').style.transform = 'translateX(0px)';
+     document.getElementById('videogest1').play();
+}
+function sendvidsaway(){
+    document.getElementById('showreelfullvid').style.transform = 'translateX(2000px)';
+    document.getElementById('videogest1').pause();
+}
+function animvids(){
+ const v = document.getElementById('idshowreel');
+v.play();
+}
+function stopvids(){
+const w = document.getElementById('idshowreel');
+w.pause();
+}
