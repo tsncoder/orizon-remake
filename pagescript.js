@@ -198,10 +198,11 @@ document.addEventListener(
       console.log("x: "+ rect.x);
       console.log("y: "+ rect.y);
       if(rect.y<40){
-            document.getElementsByClassName("container")[0].style.backgroundColor="black"
+            // document.getElementsByClassName("container")[0].style.backgroundColor="black"
+            document.getElementsByClassName("container")[0].style.backgroundImage="linear-gradient(to left, black 50%, rgb(0, 30, 150, 0.1) 50%"
       }
       else{
-            document.getElementsByClassName("container")[0].style.backgroundColor="white"
+            document.getElementsByClassName("container")[0].style.backgroundImage="linear-gradient(to left, white 50%, rgb(0, 30, 150, 0.1) 50%)"
       }
        
    }

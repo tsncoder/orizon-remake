@@ -55,7 +55,14 @@ img {
 
 /*position and ------------------------------------------ menu container properties*/
 .container {
-  background-color: white;
+  /* background-color: white; */
+  background-size: 200% 100%;
+  background-image: linear-gradient(to left, white 50%, rgb(0, 0, 0, 0.1) 50%);
+  background-position: 100% -200%;
+  transition: background-position 0.3s;
+  /* .container:hover {
+  background-position: 0 -100%;
+} */
   position: fixed;
   left: 90%;
   margin-top: 30px;
@@ -65,7 +72,9 @@ img {
   -moz-box-shadow: 28px 27px 48px 23px rgba(68, 27, 163, 0.2);
   box-shadow: 28px 27px 48px 23px rgba(68, 27, 163, 0.2);
 }
-
+.container:hover {
+  background-position: 0 -100%;
+}
 /* Rotate last bar */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(2px, -5px);
@@ -135,11 +144,21 @@ img {
   font-size: 1.5rem;
 }
 #letsgo {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to left, white 50%, rgb(0, 0, 0, 0.1) 50%);
+  background-position: 100% -200%;
+  transition: background-position 0.3s;
+  /* .container:hover {
+  background-position: 0 -100%;
+} */
   width: 70%;
   height: 100%;
   margin: 0px;
   display: inline-block;
   background-color: white;
+}
+#letsgo:hover {
+  background-position: 0 -100%;
 }
 #letsgo span {
   display: inline-block;
@@ -166,12 +185,22 @@ img {
   position: absolute;
   width: 300px;
   height: 100px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to left, white 50%, rgb(0, 0, 0, 0.1) 50%);
+  background-position: 100% -200%;
+  transition: background-position 0.3s;
+  /* .container:hover {
+  background-position: 0 -100%;
+} */
   left: 150px;
   top: 550px;
   text-decoration: none;
   -webkit-box-shadow: 57px 27px 48px 23px rgba(68, 27, 163, 0.2);
   -moz-box-shadow: 57px 27px 48px 23px rgba(68, 27, 163, 0.2);
   box-shadow: 57px 27px 48px 23px rgba(68, 27, 163, 0.2);
+}
+#showvid:hover {
+  background-position: 0 -100%;
 }
 #vidframe {
   display: flex;
