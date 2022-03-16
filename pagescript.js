@@ -208,3 +208,25 @@ document.addEventListener(
    }
    
 );
+function shaketext(box,child) {
+   const b=document.getElementById(box);
+   const chi = document.getElementById(child);
+   var e = window.event;
+   chi.backgroundColor="red"; 
+   let myx= 0.2*(e.clientX-b.offsetLeft )+15 
+   myy=  0.3*(e.clientY-b.offsetTop)+6
+  chi.style.marginLeft =myx  + "px";
+  chi.style.marginTop = myy + "px";
+  b.style.transform="translate("+(myx-25)+"px",(myy-11)+"px)";
+  b.style.transition='0.5s'
+  chi.style.transition="0.5s"
+}
+function textback(box2,child2){
+const cc=document.getElementById(box2);
+   const dd = document.getElementById(child2);
+   cc.style.justifyContent="center";
+   dd.style.marginTop='16px';   
+   dd.style.marginLeft='25px';  
+
+
+}

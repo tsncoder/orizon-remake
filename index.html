@@ -14,7 +14,7 @@
 <body>
     <div id="icon-id"><a id="home-link" href="index.html"><img width="50px" src="./images/logo.gif" alt=""><span id="siteName">Orizon</span></a> </div>
 <!--  contact us-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-<div class = "contact-us link"><a href="#">CONTACT-US</a></div>
+<div onmouseleave="textback('shakeparent1','shake1')" onmouseover="shaketext('shakeparent1','shake1')" id="shakeparent1" class = "contact-us link"><a  id="shake1" href="#"onmouseleave="textback('shakeparent1','shake1')" onmouseover="shaketext('shakeparent1','shake1')">CONTACT-US</a></div>
 
 <!--  menu icon code-|||||||| featured|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
@@ -28,7 +28,7 @@
     <a href="#">About</a>
     <a href="#">Contact us</a> 
     <h4 style="color: antiquewhite;">Have a project for us!</h4><br>
-    <div id="chatlink"> <div id="letsgo"><span>LET'S TALK</span></div><div id="go"> <span id="fleche">&#8594;</span></div></div><br>
+    <div id="chatlink"  onmouseover="shaketext('chatlink','letsgo')"> <div id="letsgo"><span>LET'S TALK</span></div><div id="go"> <span id="fleche">&#8594;</span></div></div><br>
     <div class="social">
     <a href="#" class="fa fa-dribbble"></a>
     <a href="#" class="fa fa-skype"></a>
@@ -40,13 +40,11 @@
 </div>
 <div onclick="toggle2()" id="hide"></div>
 <!--  menu icon code-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-
-
 <!--                          showreel code   ------------------------------------- -->
-<a href="#" id="showvid"  onclick="fadevi(100);bringvids()" onmouseover="animvids()" onmouseout="stopvids()">
+<a href="#" id="showvid"  onclick="fadevi(100);bringvids()" onmouseover="animvids(),shaketext('vidframe','child2')" onmouseout="stopvids()">
     <div id="vidframe">
         <video id="idshowreel" src="./images/orizonshowreel.mp4" poster="./images/showreelimg.png"></video>
-        <span>VIEW SHOWREEL</span>
+        <span id="child2">VIEW SHOWREEL</span>
     </div>
 </a>
 <div id="vmask" onclick="fadevi(0);sendvidsaway()"><img src="./images/croix.PNG" alt=""></div>
